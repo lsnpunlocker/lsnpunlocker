@@ -1,0 +1,96 @@
+.service {
+    width: 100%;
+    height: 550px;
+    background-color: rgb(57, 2, 79);
+    /* border: 0.5px white solid; */
+}
+.service-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+
+}
+  /* driver text */
+.driver-title {
+       color: white;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 27px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-underline-offset: 20px;
+      text-decoration-color: rgb(125, 94, 50);
+      margin-top: 20px;
+      user-select: none;
+      
+}
+.driver-title:hover {
+    text-decoration-color: white;
+}
+.service-driver {
+    border: 5px rgb(140, 4, 194) solid;
+    width: 100%;
+    height: 550px;
+}
+.service-tool {
+    border: 5px rgb(140, 4, 194) solid;
+    width: 100%;
+    height: 550px;
+}
+.driver-app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 550px;
+}
+.dvapp li {
+    list-style: none;
+}
+.dvapp {
+    margin-top: 35px;
+}
+.dvapp a {
+    color: rgb(251, 251, 251);
+    line-height: 40px;
+}
+.dvapp a:hover {
+    color: orange;
+}
+@media(max-width:1200px) {
+   .driver-title {
+    font-size: 22px;
+   }
+   .dvapp a {
+     font-size: 15px;
+   }
+}
+@media(max-width:850px) {
+    .service {
+        width: 100%;
+        height: 1250px;
+    }
+    .service-container {
+        grid-template-columns:  1fr;
+        grid-template-rows: 550px 550px;
+    
+    }
+}
+@media(max-width:550px) {
+    .service-driver {
+        width: 100%;
+        height: 550px;
+    }
+    .dvapp a {
+        font-size: 13px;
+      }
+}
+@media(max-width:400px) {
+   .dvapp a {
+    font-size: 10px;
+   }
+   .driver-title {
+    font-size: 15px;
+   }
+}

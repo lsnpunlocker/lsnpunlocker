@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="shortcut icon" href="icon/lsnp_3Hn_icon.ico">
+    <link rel="stylesheet" href="css/login.css">
+     <script src="https://kit.fontawesome.com/1c38d71225.js" crossorigin="anonymous"></script> 
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body class="body">
+    
+    <!-- <div class="mb-5"> 
+        <h3 class="mb-3">Login</h3>
+        <input type="text" placeholder="Username" id="userInp" class="form-control mb-3">
+        <input type="password" placeholder="Password" id="passInp" class="form-control mb-3">
+        <div class="custom-control custom-switch mb-3">
+            <input type="checkbox"  id="customSwitch1">
+            
+          </div>
+        <button type="text" id="sub_btn" class="btn btn-outline-primary mb-3 w-100">Login</button>
+        <a  class="badge badge-secondary py-2 w-100">Want to Create A New Account?</a>
+        
+    </div> -->
+        <div class="login">
+            <div class="login-container">
+                <h3>User Login</h3>
+                <div class="username">
+                    <i class="far fa-solid fa-user"></i>
+                    <input  type="text" placeholder=" Type your username" id="userInp" class="Username">
+                </div> 
+                <div class="password">  
+                    <i class="far fa-solid fa-lock"></i>        
+                   <input type="password" placeholder="Type your password" id="passInp" class="Password">
+                </div> 
+                <div class="check">
+                    <input type="checkbox" id="customSwitch1" class="savepassword">
+                    <label for="customSwitch1" class="savepassword">Remember Password</label>
+                </div> 
+                <div class="submit">
+                    <button type="text" id="sub_btn" >Login</button>
+                </div>
+                <h4>Or</h4>
+                <a href="index.html" class="createAcc">Want to Create A New Account? </a>
+            </div>
+        </div>
+
+
+    
+    
+        <script type="module">
+                   // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js";
+     
+      const firebaseConfig = {
+        apiKey: "AIzaSyDCTpsx1E-uFTNL15U9PdabU8a60aw_M4w",
+        authDomain: "registervb-d1c2b.firebaseapp.com",
+        databaseURL: "https://registervb-d1c2b-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "registervb-d1c2b",
+        storageBucket: "registervb-d1c2b.appspot.com",
+        messagingSenderId: "82103618386",
+        appId: "1:82103618386:web:bc6aff11176a0524ae488b",
+        measurementId: "G-9Q7X1VY9JX"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    
+                import{ getDatabase , ref , set , child , get , update , remove} 
+                     from "https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js";
+                     const db = getDatabase();
+                     //the reference
+                     const username = document.getElementById("userInp");
+                     const pass = document.getElementById("passInp");
+                     const submit = document.getElementById("sub_btn");
+     
+                    // Auth Process
+    
+                    function AuthenticateUser() {
+                        const dbref = ref(db);
+    
+                       get(child(dbref,"Website-Users/" + username.value)).then((snapshot)=>{
+                          if(snapshot.exists()){
+                            //  alert()
+                              let dbpass = decPass(snapshot.val().password);
+                              if(dbpass == pass.value) {
+                                  login(snapshot.val());
+                              } else {
+                                  alert("user does not exist");
+                              }
+                          } else {
+                              alert("username or password is invalid");
+                          }
+                          
+                       });
+    
+                    }
+    
+                   
+    
+                  //  discipt process
+    
+                  function decPass(dbpass){
+                         var pass12 = CryptoJS.AES.decrypt(dbpass,pass.value);
+                         return pass12.toString(CryptoJS.enc.Utf8);
+                     }
+                  // login 
+    
+                  function login(user) {
+                      let keepLoggedIn = document.getElementById('customSwitch1').checked;
+    
+                      if(!keepLoggedIn) {
+                          sessionStorage.setItem('user',JSON.stringify( user));
+                          window.location = "index.html";
+                      } else {
+                          localStorage.setItem('keepLoggedIn' , 'yes');
+                          localStorage.setItem('user',JSON.stringify( user));
+                          window.location = "index.html";
+                          
+                      }
+                  }
+                        //Assign the event
+                        submit.addEventListener('click',AuthenticateUser);
+          </script>
+
+</body>
+</html>

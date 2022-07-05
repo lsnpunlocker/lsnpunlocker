@@ -1,0 +1,572 @@
+
+
+  /* For container */
+.container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+}
+   /* for text container */
+.container .text-container {
+    display: flex;
+    flex-direction: column;
+}
+  /* For Main Text  */
+h1 {
+    margin-top: 260px;
+    color: white;
+    position: absolute;
+    font-size: 45px;   
+    user-select: none;
+    font-family: 'Bungee', cursive;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    text-underline-offset: 11px;
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+h3 {
+    margin-top: 400px;
+    color: white;
+    position: absolute;
+    font-size: 20px;   
+    user-select: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 40px;
+}
+.download {
+    margin-top: 600px;
+    color: rgb(241, 241, 241);
+    position: absolute;
+    text-decoration: none;
+    font-size: 32px;
+    width: 230px;
+    height: 58px;
+    background-color: rgb(244, 143, 11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+     border: 1px black solid;
+     margin-left: 250px;
+     border-radius: 15px;
+}
+.download-version {
+    margin-top: 700px;
+    margin-left: 250px;
+    font-size: 20px;
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+.fa-cloud-arrow-down {
+    padding-right: 12px;
+}
+.container img{
+       position:absolute;
+       width: 1000px;
+       height: 580px;
+       right: 35px;
+       margin-top: 230px;
+       user-select: none;
+       margin-right: 60px;
+       border-radius: 7px;
+}
+.download:hover {
+    opacity: 0.9;
+    color:white;
+    box-shadow: 3px 8px 7px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 8px 7px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 8px 7px 0px rgba(0,0,0,0.75);
+}
+.chat-icon img {
+    width: 100px;
+    height: 100px;
+    padding-top: 600px;
+    position: fixed;
+}
+.chat-icon img:hover{
+    opacity: 0.5;
+   
+}
+
+@media(max-width:1674px) {
+    .container {
+        padding-left: 40px;
+    }
+    h1 {
+        margin-top: 220px;
+        font-size: 35px;   
+        letter-spacing: 1px;
+        text-underline-offset: 5px;
+        margin-left: 30px;
+    }
+    h3 {
+        margin-top: 320px;
+        font-size: 20px;   
+        letter-spacing: 3px;
+        margin-left: 30px;
+    }
+    .download {
+        margin-top: 500px;
+        font-size: 28px;
+        width: 210px;
+        height: 58px;
+        padding: 10px;
+         margin-left: 250px;
+         border-radius: 15px;
+    }
+    .download-version {
+        margin-top: 600px;
+        margin-left: 250px;
+        font-size: 20px;
+    }
+    .fa-cloud-arrow-down {
+        padding-right: 12px;
+    }
+    .container img{
+           width: 800px;
+           height: 450px;
+           right: 35px;
+           margin-top: 230px;
+           margin-right: 10px;
+    }
+    .chat-icon img {
+        width: 100px;
+        height: 100px;
+        padding-top: 600px;
+        position: fixed;
+    }
+}
+@media(max-width:1456px) {
+    .container {
+        padding-left: 35px;
+    }
+    h1 {
+        margin-top: 250px;
+        font-size: 35px;   
+        text-underline-offset: 5px;
+        margin-left: 0px;
+    }
+    h3 {
+        margin-top: 350px;
+        font-size: 20px;   
+        letter-spacing: 3px;
+        margin-left: 30px;
+    }
+    .download {
+        margin-top: 450px;
+        font-size: 26px;
+        width: 200px;
+        height: 58px;
+        padding: 10px;
+         margin-left: 250px;
+         border-radius: 15px;
+    }
+    .download-version {
+        margin-top: 600px;
+        margin-left: 150px;
+        font-size: 20px;
+    }
+    .fa-cloud-arrow-down {
+        padding-right: 12px;
+    }
+    .container img{
+           width: 660px;
+           height: 400px;
+           right: 35px;
+           margin-top: 260px;
+           margin-right: 10px;
+    }
+   
+}
+@media(max-width:1342px) {
+    h1 {
+        font-size: 28px;
+    }
+    .container img{
+        width: 660px;
+        height: 400px;
+        right: 35px;
+        margin-top: 280px;
+        margin-right: 10px;
+ }
+    .chat-icon img {
+        width: 100px;
+        height: 100px;
+        padding-top: 520px;
+        position: fixed;
+    }
+}
+@media(max-width:1200px) {
+    .container {
+        padding-left: 35px;
+    }
+    h1 {
+        margin-top: 240px;
+        font-size: 30px;   
+    }
+    h3 {
+        margin-top: 350px;
+        font-size: 20px;   
+        letter-spacing: 3px;
+        margin-left: 30px;
+    }
+    .download {
+        margin-top: 450px;
+        font-size: 26px;
+        width: 200px;
+        height: 58px;
+        padding: 10px;
+         margin-left: 120px;
+         border-radius: 15px;
+    }
+    .download-version {
+        margin-top: 550px;
+        margin-left: 120px;
+        font-size: 20px;
+    }
+    .fa-cloud-arrow-down {
+        padding-right: 12px;
+    }
+    .container img{
+           width: 550px;
+           height: 320px;
+           right: 35px;
+           margin-top: 260px;
+           margin-right: 5px;
+    }
+    .chat-icon img {
+        width: 100px;
+        height: 100px;
+        padding-top: 350px;
+        position: fixed;
+    }
+   
+}
+@media(max-width:1100px) {
+    .container {
+        padding-left: 28px;
+    }
+    h1 {
+        margin-top: 180px;
+        font-size: 30px; 
+        margin-left: 230px;  
+    }
+    h3 {
+        margin-top: 270px;
+        font-size: 20px;   
+        letter-spacing: 3px;
+        margin-left: 30px;
+    }
+    .download {
+        margin-top: 470px;
+        font-size: 26px;
+        width: 180px;
+        height: 50px;
+        padding: 10px;
+         margin-left: 80px;
+         border-radius: 15px;
+    }
+    .download-version {
+        margin-top: 580px;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    .fa-cloud-arrow-down {
+        padding-right: 12px;
+    }
+    .container img{
+           width: 550px;
+           height: 320px;
+           right: 35px;
+           margin-top: 310px;
+           margin-right: 70px;
+    }
+}
+@media(max-width:954px) {
+    .container {
+        padding-left: 18px;
+    }
+    h1 {
+        /* margin-top: 180px;
+        font-size: 25px; 
+        margin-left: 150px;   */
+        visibility: hidden;
+    }
+    h3 {
+        margin-top: 250px;
+        font-size: 18px;   
+        letter-spacing: 3px;
+        margin-left: 145px;
+    }
+    .download {
+        margin-top: 490px;
+        font-size: 26px;
+        width: 150px;
+        height: 40px;
+        padding: 10px;
+         margin-left: 40px;
+         border-radius: 15px;
+    }
+    .download-version {
+        margin-top: 580px;
+        margin-left: 30px;
+        font-size: 15px;
+    }
+    .fa-cloud-arrow-down {
+        padding-right: 12px;
+    }
+    .container img{
+           width: 550px;
+           height: 320px;
+           right: 35px;
+           margin-top: 310px;
+           margin-right: 70px;
+    }
+    .chat-icon img {
+        width: 100px;
+        height: 100px;
+        padding-top: 350px;
+        right: 0px;
+        position: fixed;
+    }
+}
+@media(max-width:900px) {
+    .container {
+        padding-left: 18px;
+    }
+    h1 {
+        /* margin-top: 180px;
+        font-size: 25px; 
+        margin-left: 150px;   */
+        visibility: hidden;
+    }
+    h3 {
+        margin-top: 250px;
+        font-size: 18px;   
+        letter-spacing: 3px;
+        margin-left: 145px;
+    }
+    .download {
+        margin-top: 650px;
+        font-size: 23px;
+        width: 140px;
+        height: 35px;
+        padding: 10px;
+         margin-left: 300px;
+         border-radius: 15px;
+    }
+    .download-version {
+        margin-top: 720px;
+        margin-left: 280px;
+        font-size: 15px;
+    }
+    .fa-cloud-arrow-down {
+        padding-right: 8px;
+    }
+    .container img{
+           width: 550px;
+           height: 320px;
+           /* right: 50px; */
+           margin-top: 310px;
+           margin-right: 115px;
+    }
+    .chat-icon img {
+        width: 100px;
+        height: 100px;
+        padding-top: 330px;
+      
+    }
+}
+@media(max-width:800px) {
+    .container {
+        padding-left: 18px;
+    }
+    h1 {
+       
+        visibility: hidden;
+    }
+    h3 {
+        margin-top: 220px;
+        font-size: 18px;   
+        letter-spacing: 3px;
+        margin-left: 145px;
+    }
+    .container img{
+        width: 550px;
+        height: 320px;
+        right: 35px;
+        margin-top: 280px;
+        margin-right: 70px;
+ }
+    .download {
+        margin-top: 630px;
+        font-size: 24px;
+        width: 150px;
+        height: 35px;
+        padding: 10px;
+         margin-left: 300px;
+         border-radius: 15px;
+    }
+    .download-version {
+        margin-top: 710px;
+        margin-left: 270px;
+        font-size: 15px;
+    }
+    .fa-cloud-arrow-down {
+        padding-right: 12px;
+    }
+    .chat-icon img {
+        width: 100px;
+        height: 100px;
+        padding-top: 330px;
+      
+    }
+   
+}
+@media(max-width:600px) {
+    .container {
+        padding-left: 18px;
+    }
+    h1 {
+       
+        visibility: hidden;
+    }
+    h3 {
+        margin-top: 220px;
+        font-size: 18px;   
+        letter-spacing: 3px;
+        margin-left: 145px;
+    }
+    .container img{
+        width: 550px;
+        height: 320px;
+        right: 35px;
+        margin-top: 280px;
+        margin-right: 70px;
+ }
+    .download {
+        margin-top: 630px;
+        font-size: 24px;
+        width: 150px;
+        height: 35px;
+        padding: 10px;
+         margin-left: 300px;
+         border-radius: 15px;
+    }
+    .download-version {
+        margin-top: 710px;
+        margin-left: 270px;
+        font-size: 15px;
+    }
+    .fa-cloud-arrow-down {
+        padding-right: 12px;
+    }
+    .chat-icon img {
+        width: 50px;
+        height: 50px;
+        padding-top: 350px;
+      
+    }
+}
+@media(max-width:600px) {
+    .container img{
+        width: 360px;
+        height: 220px;
+        right: 40px;
+        margin-top: 250px;
+ }
+ h3 {
+    margin-top: 180px;
+    font-size: 14px;   
+    letter-spacing: 3px;
+    margin-left: 55px;
+}
+.download {
+    margin-top: 500px;
+    font-size: 20px;
+    width: 150px;
+    height: 35px;
+    padding: 10px;
+     margin-left: 150px;
+     border-radius: 15px;
+}
+.download-version {
+    margin-top: 580px;
+    margin-left: 130px;
+    font-size: 15px;
+}
+.fa-cloud-arrow-down {
+    padding-right: 12px;
+}
+.chat-icon img {
+    width: 80px;
+    height: 80px;
+    padding-top: 350px;
+    position: relative;
+    margin-left: 450px;
+}
+}
+@media(max-width:550px) {
+    .container img{
+        width: 360px;
+        height: 220px;
+        right: 80px;
+        margin-top: 250px;
+        margin-right: 0px;
+       }
+       .download {
+        margin-top: 510px;
+        font-size: 20px;
+        width: 150px;
+        height: 35px;
+        padding: 10px;
+         margin-left: 150px;
+         border-radius: 15px;
+    }
+    .download-version {
+        margin-top: 590px;
+        margin-left: 125px;
+        font-size: 15px;
+    }
+    .chat-icon img {
+        width: 80px;
+        height: 80px;
+        padding-top: 350px;
+        position: relative;
+        margin-left: 450px;
+    }
+}
+@media(max-width:400px) {
+    .container img{
+        width: 360px;
+        height: 220px;
+        right: 15px;
+        margin-top: 250px;
+        margin-right: 0px;
+       }
+       .download {
+        margin-top: 510px;
+        font-size: 20px;
+        width: 150px;
+        height: 35px;
+        padding: 10px;
+         margin-left: 100px;
+         border-radius: 15px;
+    }
+    .download-version {
+        margin-top: 590px;
+        margin-left: 90px;
+        font-size: 15px;
+    }
+    .chat-icon img {
+        width: 60px;
+        height: 60px;
+        padding-top: 390px;
+        position: relative;
+        margin-left: 220px;
+    }
+}

@@ -1,0 +1,112 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: rgb(95, 12, 172);
+}
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+}
+.how-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+.photo-container {
+    display: flex;
+    flex-direction: row;
+}
+.photo-container h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-left: 100px;
+    align-items: center;
+}
+.photo-container img {
+    width: 500px;
+    height: 330px;
+}
+.photo-container h3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    color: white;
+}
+@media(max-width:1200px) {
+    .how-container {
+        margin-left: 30px;
+    }
+    .photo-container h2 {
+        margin-left: 30px;
+    }
+}
+@media(max-width:850px) {
+    .how-container {   
+        margin-left: 10px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .photo-container img {
+        width: 400px;
+        height: 230px;
+        margin-left: 15 0px;
+    }
+    .photo-container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .photo-container h2 {
+        font-size: 20px;
+    }
+    .img {
+        padding: 20px;
+    }
+}
+@media(max-width:550px) {
+    .how-container {   
+        margin-left: 2px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .photo-container img {
+        width: 300px;
+        height: 180px;
+        margin-left: 60px;
+    }
+    
+    .photo-container h2 {
+        font-size: 17px;
+    }
+    .img {
+        padding: 21px;
+    }
+}
+@media(max-width:400px) {
+   
+    h1 {
+        font-size: 20px;
+    }
+    .photo-container img {
+        width: 300px;
+        height: 180px;
+        margin-left: 0px;
+    }
+    
+    .photo-container h2 {
+        font-size: 16px;
+    }
+    .img {
+        padding: 18px;
+    }
+}

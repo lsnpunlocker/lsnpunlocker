@@ -1,0 +1,259 @@
+.about {
+    width: 100%;
+    height: 550px;
+    background-color: rgb(57, 2, 79);
+}
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 550px;
+  
+}
+
+.plan {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 25px;
+    border: 10px rgb(140, 4, 194) solid;
+    box-shadow: -1px 0px 29px -7px rgba(247,247,247,0.75);
+    -webkit-box-shadow: -1px 0px 29px -7px rgba(247,247,247,0.75);
+    -moz-box-shadow: -1px 0px 29px -7px rgba(247,247,247,0.75);
+    border-radius: 5px;
+}
+.header {
+    color: rgb(240, 240, 240);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: rgb(125, 94, 50);
+    text-underline-offset: 13px;
+    padding-bottom: 15px;
+    user-select: none;
+}
+.header:hover{
+    text-decoration-color: aliceblue;
+}
+.type-text {
+    color: whitesmoke;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 13px;
+    user-select: none;
+   
+}
+.account li {
+    list-style: none;
+   
+}
+.account li a {
+    color: rgb(255, 255, 255);
+    line-height: 33px;
+    font-size: 22px;
+    user-select: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.account {
+    padding-bottom: 10px;
+}
+.price h5{
+    color: rgb(223, 223, 2);
+    font-size: 28px;
+    padding-bottom: 13px;
+    letter-spacing: 2px;
+}
+.buy {
+    padding: 15px 50px;
+    background-color: rgb(140, 4, 194);
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+   
+}
+        /* for type-text icon */
+.fay {
+    color: rgb(0, 131, 246);
+    padding-right: 20px;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.order {
+    padding-top: 30px;
+}
+.order a {
+     text-decoration: none;
+     color: white;
+     border: 1px rgb(134, 133, 133) solid;
+     padding: 12px 43px;
+     background-color:rgb(140, 4, 194) ;
+     font-size: 25px;
+     border-radius: 15px;
+     cursor: pointer;
+     
+}
+     /* for order icon  */
+.fa {
+    padding-right: 7px;
+}
+.order a:hover {
+    background-color: rgb(242, 242, 242);
+    color: rgb(1, 1, 1);
+}
+
+
+.plan h6 {
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-top: 20px;
+}
+.reseller,
+.free-acc {
+    margin-top: 165px;
+}
+@media(max-width:1200px) {
+    .header {
+        font-size: 25px;
+        margin-bottom: 27px;
+    }
+    .type-text {
+        letter-spacing: 1px;
+        font-size: 20px;
+        padding-bottom: 13px;    
+    }
+    .account li a {
+        line-height: 32px;
+        font-size: 20px;   
+    }
+    .price h5{
+        font-size: 24px;
+        padding-top: 15px;
+        padding-bottom: 13px;
+        letter-spacing: 2px;
+    }
+    .buy {
+        padding: 15px 40px;  
+        font-size: 12px;      
+    }
+    .order a {
+        padding: 12px 43px;
+        font-size: 20px;      
+   }
+}
+@media(max-width:850px) {
+    .header {
+        font-size: 20px;
+        margin-bottom: 27px;
+    }
+    .type-text {
+        letter-spacing: 1px;
+        font-size: 17px;
+        padding-bottom: 13px;    
+    }
+    .account li a {
+        line-height: 32px;
+        font-size: 16px;   
+    }
+    .price h5{
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 13px;
+        letter-spacing: 2px;
+    }
+    .buy {
+        padding: 15px 35px;  
+        font-size: 10px;      
+    }
+    .order a {
+        padding: 12px 43px;
+        font-size: 18px;      
+   }
+}
+@media(max-width:550px) {
+    .about {
+        width: 100%;
+        height: 100px;
+    }
+    .about-container {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 150px 150px;
+      
+    }
+    .header {
+        font-size: 13px;
+        margin-bottom: 27px;
+    }
+    .type-text {
+        letter-spacing: 1px;
+        font-size: 15px;
+        padding-bottom: 13px;    
+    }
+    .account li a {
+        line-height: 32px;
+        font-size: 14px;   
+    }
+    .price h5{
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 13px;
+        letter-spacing: 2px;
+    }
+    .buy {
+        padding: 15px 35px;  
+        font-size: 10px;      
+    }
+    .order a {
+        padding: 12px 43px;
+        font-size: 15px;      
+   }
+}
+@media(max-width:400px) {
+    .about {
+        width: 100%;
+        height: 1100px;
+    }
+    .about-container {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 550px 550px;
+      
+    }
+    .header {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .type-text {
+       
+        visibility: hidden; 
+    }
+    .fay {
+        color: rgb(0, 131, 246);
+        padding-right: 9px;
+        font-size: 15px;
+
+    }
+    .account li a {
+        line-height: 10px;
+        font-size: 11px;   
+    }
+    .price h5{
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 13px;
+        letter-spacing: 2px;
+    }
+    .buy {
+        padding: 15px 35px;  
+        font-size: 10px;      
+    }
+    .order a {
+        padding: 12px 43px;
+        font-size: 15px;      
+   }
+}
