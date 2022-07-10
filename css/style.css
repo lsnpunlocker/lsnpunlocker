@@ -540,6 +540,11 @@ h3 {
         margin-left: 450px;
     }
 }
+@media(max-width:450px) {
+    .container img {
+        right:30px ;
+    }
+}
 @media(max-width:400px) {
     .container img{
         width: 360px;
