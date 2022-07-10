@@ -214,6 +214,49 @@
         font-size: 15px;      
    }
 }
+@media(max-width:450px) {
+    .about {
+        width: 100%;
+        height: 1100px;
+    }
+    .about-container {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 550px 550px;
+      
+    }
+    .header {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .type-text {
+       
+        visibility: hidden; 
+    }
+    .fay {
+        color: rgb(0, 131, 246);
+        padding-right: 9px;
+        font-size: 15px;
+
+    }
+    .account li a {
+        line-height: 10px;
+        font-size: 11px;   
+    }
+    .price h5{
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 13px;
+        letter-spacing: 2px;
+    }
+    .buy {
+        padding: 15px 35px;  
+        font-size: 10px;      
+    }
+    .order a {
+        padding: 12px 43px;
+        font-size: 15px;      
+   }
+}
 @media(max-width:400px) {
     .about {
         width: 100%;
