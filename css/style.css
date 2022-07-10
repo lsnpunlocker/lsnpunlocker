@@ -544,6 +544,20 @@ h3 {
     .container img {
         right:30px ;
     }
+   .download {
+        margin-top: 510px;
+        font-size: 20px;
+        width: 150px;
+        height: 35px;
+        padding: 10px;
+         margin-left: 100px;
+         border-radius: 15px;
+    }
+    .download-version {
+        margin-top: 590px;
+        margin-left: 90px;
+        font-size: 15px;
+    }
 }
 @media(max-width:400px) {
     .container img{
