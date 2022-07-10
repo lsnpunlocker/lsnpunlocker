@@ -133,6 +133,12 @@ footer {
         padding-top: 30px;
     }
 }
+@media(max-width:450px) {
+    .footer-container {
+        grid-template-columns: 1fr  ;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+    }
+}
 @media(max-width:400px) {
     .footer-container {
         grid-template-columns: 1fr  ;
