@@ -282,7 +282,18 @@ h4 {
         font-family: 'Bungee', cursive;
     }
 }
+@media(max-width:1400px) {
+    ul li a {
+        font-size: 20px;
+        margin-left: 35px;
+    }
+}
 @media(max-width:1377px) {
+     ul li a {
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    
     .nav-logo-text img {
         width: 62px;
         height: 62px;
