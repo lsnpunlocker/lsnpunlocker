@@ -1,12 +1,12 @@
 .about {
     width: 100%;
-    height: 550px;
+    height: 750px;
     background-color: rgb(57, 2, 79);
 }
 .about-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 550px;
+    grid-template-rows: 750px;
   
 }
 
@@ -78,7 +78,7 @@
 }
         /* for type-text icon */
 .fay {
-    color: rgb(0, 131, 246);
+    color: rgb(255, 255, 255);
     padding-right: 20px;
     font-size: 20px;
     padding-top: 5px;
@@ -118,23 +118,16 @@
 .free-acc {
     margin-top: 165px;
 }
-@media(max-width:1200px) {
-    .header {
-        font-size: 25px;
-        margin-bottom: 27px;
-    }
-    .type-text {
-        letter-spacing: 1px;
-        font-size: 20px;
-        padding-bottom: 13px;    
-    }
+@media(max-width:1300px) {
     .account li a {
         line-height: 32px;
         font-size: 20px;   
     }
+    .header {
+        font-size: 23px;
+    }
     .price h5{
-        font-size: 24px;
-        padding-top: 15px;
+        font-size: 25px;
         padding-bottom: 13px;
         letter-spacing: 2px;
     }
@@ -147,9 +140,38 @@
         font-size: 20px;      
    }
 }
-@media(max-width:850px) {
+@media(max-width:1200px) {
     .header {
+        font-size: 23px;
+        margin-bottom: 27px;
+    }
+    .type-text {
+        letter-spacing: 1px;
         font-size: 20px;
+        padding-bottom: 13px;    
+    }
+    .account li a {
+        line-height: 30px;
+        font-size: 18px;   
+    }
+    .price h5{
+        font-size: 22px;
+        padding-top: 15px;
+        padding-bottom: 13px;
+        letter-spacing: 2px;
+    }
+    .buy {
+        padding: 15px 35px;  
+        font-size: 12px;      
+    }
+    .order a {
+        padding: 12px 40px;
+        font-size: 20px;      
+   }
+}
+@media(max-width:900px) {
+    .header {
+        font-size: 21px;
         margin-bottom: 27px;
     }
     .type-text {
@@ -158,8 +180,8 @@
         padding-bottom: 13px;    
     }
     .account li a {
-        line-height: 32px;
-        font-size: 16px;   
+        line-height: 30px;
+        font-size: 14px;   
     }
     .price h5{
         font-size: 20px;
@@ -176,45 +198,159 @@
         font-size: 18px;      
    }
 }
-@media(max-width:550px) {
+@media(max-width:850px) {
+    .header {
+        font-size: 20px;
+        margin-bottom: 27px;
+    }
+    .type-text {
+        letter-spacing: 1px;
+        font-size: 17px;
+        padding-bottom: 13px;    
+    }
+    .account li a {
+        font-size: 13px;   
+    }
+    .price h5{
+        font-size: 18px;
+    }
+    .buy {
+        padding: 15px 30px;  
+        font-size: 10px;      
+    }
+    .order a {
+        padding: 12px 43px;
+        font-size: 18px;      
+   }
+}
+@media(max-width:850px) {
+    .header {
+        font-size: 20px;
+        margin-bottom: 27px;
+    }
+    .type-text {
+        letter-spacing: 0px;
+        font-size: 17px;
+        padding-bottom: 13px;    
+    }
+    .account li a {
+        font-size: 12px;   
+    }
+    .price h5{
+        font-size: 18px;
+    }
+    .buy {
+        padding: 15px 30px;  
+        font-size: 10px;      
+    }
+    .order a {
+        padding: 12px 43px;
+        font-size: 18px;      
+   }
+}
+@media(max-width:800px) {
+    .header {
+        font-size: 19px;
+        margin-bottom: 27px;
+    }
+    .type-text {
+        letter-spacing: 0px;
+        font-size: 16px;
+        padding-bottom: 15px;    
+    }
+    .account li a {
+        font-size: 11px;   
+    }
+    .price h5{
+        font-size: 17px;
+    }
+    .buy {
+        padding: 15px 30px;  
+        font-size: 10px;      
+    }
+    .order a {
+        padding: 10px 30px;
+        font-size: 18px;      
+   }
+}
+@media(max-width:750px) {
+    .header {
+        font-size: 18px;
+        margin-bottom: 27px;
+    }
+    .type-text {
+        font-size: 15px;
+        padding-bottom: 15px;    
+    }
+    .account li a {
+        font-size: 10px;   
+    }
+    .price h5{
+        font-size: 17px;
+    }
+    .buy {
+        padding: 15px 30px;  
+        font-size: 10px;      
+    }
+    .order a {
+        padding: 10px 30px;
+        font-size: 14px;      
+   }
+}
+@media(max-width:700px) {
+    .header {
+        font-size: 16px;
+    }
+    .type-text {
+        font-size: 13px;
+    }
+    .account li a {
+        font-size: 9px;   
+    }
+    
+    .price h5{
+        font-size: 17px;
+    }
+    .buy {
+        padding: 15px 30px;  
+        font-size: 10px;      
+    }
+    .order a {
+        padding: 10px 30px;
+        font-size: 14px;      
+   }
+}
+@media(max-width:600px) {
     .about {
         width: 100%;
-        height: 100px;
+        height: 650px;
     }
-    .about-container {
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 150px 150px;
-      
-    }
+
     .header {
         font-size: 13px;
         margin-bottom: 27px;
     }
     .type-text {
-        letter-spacing: 1px;
-        font-size: 15px;
+        font-size: 11px;
         padding-bottom: 13px;    
     }
     .account li a {
-        line-height: 32px;
-        font-size: 14px;   
+        line-height: 20px;
+        font-size: 8px;   
     }
     .price h5{
-        font-size: 20px;
-        padding-top: 15px;
-        padding-bottom: 13px;
-        letter-spacing: 2px;
+        font-size: 13px;    
     }
     .buy {
         padding: 15px 35px;  
         font-size: 10px;      
     }
     .order a {
-        padding: 12px 43px;
-        font-size: 15px;      
+        padding: 10px 30px;
+        font-size: 12px;      
    }
 }
-@media(max-width:450px) {
+@media(max-width:550px) {
     .about {
         width: 100%;
         height: 1100px;
@@ -233,7 +369,6 @@
         visibility: hidden; 
     }
     .fay {
-        color: rgb(0, 131, 246);
         padding-right: 9px;
         font-size: 15px;
 
@@ -276,7 +411,6 @@
         visibility: hidden; 
     }
     .fay {
-        color: rgb(0, 131, 246);
         padding-right: 9px;
         font-size: 15px;
 
@@ -286,17 +420,119 @@
         font-size: 11px;   
     }
     .price h5{
-        font-size: 20px;
-        padding-top: 15px;
-        padding-bottom: 13px;
-        letter-spacing: 2px;
+        font-size: 15px;
     }
     .buy {
         padding: 15px 35px;  
         font-size: 10px;      
     }
     .order a {
-        padding: 12px 43px;
-        font-size: 15px;      
+        padding: 12px 25px;
+        font-size: 14px;      
+   }
+}
+@media(max-width:350px) {
+    .about {
+        width: 100%;
+        height: 1700px;
+    }
+    .about-container {
+        grid-template-columns: 320px  ;
+        grid-template-rows: 550px 550px 550px;
+      
+    }
+    .header {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .type-text {
+       font-size: 13px;
+        visibility: visible; 
+    }
+  
+    .account li a {
+        line-height: 12px;
+        font-size: 13px;   
+    }
+    .price h5{
+        font-size: 17px;
+    }
+    .buy {
+        padding: 15px 40px;  
+        font-size: 10px;      
+    }
+    .order a {
+        padding: 12px 30px;
+        font-size: 16px;      
+   }
+}
+@media(max-width:300px) {
+    .about {
+        width: 100%;
+        height: 1700px;
+    }
+    .about-container {
+        grid-template-columns: 250px  ;
+        grid-template-rows: 580px 580px 580px;
+      
+    }
+    .header {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .type-text {
+       font-size: 13px;
+        visibility: visible; 
+    }
+  
+    .account li a {
+        line-height: 12px;
+        font-size: 13px;   
+    }
+    .price h5{
+        font-size: 17px;
+    }
+    .buy {
+        padding: 15px 40px;  
+        font-size: 10px;      
+    }
+    .order a {
+        padding: 12px 30px;
+        font-size: 16px;      
+   }
+}
+@media(max-width:250px) {
+    .about {
+        width: 100%;
+        height: 1700px;
+    }
+    .about-container {
+        grid-template-columns: 210px  ;
+        grid-template-rows: 580px 580px 580px;
+      
+    }
+    .header {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .type-text {
+       font-size: 13px;
+        visibility: visible; 
+    }
+  
+    .account li a {
+        line-height: 20px;
+        font-size: 10px;   
+    }
+    .price h5{
+        font-size: 17px;
+    }
+    .buy {
+        padding: 15px 40px;  
+        font-size: 10px;      
+    }
+    .order a {
+        padding: 12px 30px;
+        font-size: 16px;      
    }
 }
