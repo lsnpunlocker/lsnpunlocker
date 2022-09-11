@@ -1,8 +1,8 @@
 .service {
     width: 100%;
-    height: 550px;
+    height: 800px;
     background-color: rgb(57, 2, 79);
-    /* border: 0.5px white solid; */
+
 }
 .service-container {
     display: grid;
@@ -33,17 +33,17 @@
 .service-driver {
     border: 5px rgb(140, 4, 194) solid;
     width: 100%;
-    height: 550px;
+    height: 800px;
 }
 .service-tool {
     border: 5px rgb(140, 4, 194) solid;
     width: 100%;
-    height: 550px;
+    height: 800px;
 }
 .driver-app {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 550px;
+    grid-template-rows: 600px;
 }
 .dvapp li {
     list-style: none;
@@ -55,9 +55,23 @@
     color: rgb(251, 251, 251);
     line-height: 40px;
 }
+.dvapp a .fa {
+    padding-right: 10px;
+}
+.dvapp a span {
+    color: rgb(244, 218, 18);
+}
 .dvapp a:hover {
     color: orange;
 }
+@media(max-width:1300px) {
+    .driver-title {
+     font-size: 22px;
+    }
+    .dvapp a {
+      font-size: 16px;
+    }
+ }
 @media(max-width:1200px) {
    .driver-title {
     font-size: 22px;
@@ -86,11 +100,86 @@
         font-size: 13px;
       }
 }
+@media(max-width:450px) {
+    .service {
+        width: 100%;
+        height: 1800px;
+
+    }
+    .service-driver {
+        width: 100%;
+        height: 100%;
+    }
+    .service-container {
+        grid-template-columns:  400px ;
+        grid-template-rows:  1300px  1300px;
+    }
+    .driver-app {
+        display: grid;
+        grid-template-columns: 400px ;
+        grid-template-rows: 400px 400px;
+    }
+
+    .dvapp a {
+        font-size: 16px;
+      }
+}
 @media(max-width:400px) {
    .dvapp a {
-    font-size: 10px;
+    font-size: 15px;
    }
    .driver-title {
     font-size: 15px;
    }
+   .service-container {
+    grid-template-columns:  350px ;
+    grid-template-rows:  1300px  1300px;
 }
+.driver-app {
+    display: grid;
+    grid-template-columns: 310px ;
+    grid-template-rows: 400px 400px;
+}
+}
+@media(max-width:350px) {
+    .dvapp a {
+     font-size: 15px;
+     padding-left: 10px;
+    }
+    .driver-title {
+     font-size: 15px;
+    }
+    .service-container {
+     grid-template-columns:  295px ;
+     grid-template-rows:  1300px  1300px;
+    }
+    .driver-app {
+     display: grid;
+     grid-template-columns: 300px ;
+     grid-template-rows: 500px 500px;
+    }
+    .service-tool-container .dvapp a {
+      font-size: 13px;
+    }
+ }
+ @media(max-width:300px) {
+    .dvapp a {
+     font-size: 15px;
+     padding-left: 10px;
+    }
+    .driver-title {
+     font-size: 15px;
+    }
+    .service-container {
+     grid-template-columns:  255px ;
+     grid-template-rows:  1300px  1300px;
+    }
+    .driver-app {
+     display: grid;
+     grid-template-columns: 300px ;
+     grid-template-rows: 500px 500px;
+    }
+    .service-tool-container .dvapp a {
+      font-size: 11px;
+    }
+ }
