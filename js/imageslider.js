@@ -3,7 +3,7 @@ var image = [];
 var time = 2500;
 
 
-image[0] = "icon/photo/1(2).png";
+image[0] = "icon/photo/0.png";
 image[1] = "icon/photo/2.png";
 image[2] = "icon/photo/3.png";
 image[3] = "icon/photo/4.png";
