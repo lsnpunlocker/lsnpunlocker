@@ -37,7 +37,25 @@
 }
 @media(max-width:400px) {
     .ads img {
-        width: 300;
-        height: 100;
+        width: 300px;
+        height: 100px;
+    }
+}
+@media(max-width:350px) {
+    .ads img {
+        width: 300px;
+        height:100px;
+    }
+}
+@media(max-width:300px) {
+    .ads img {
+        width: 250px;
+        height:80px;
+    }
+}
+@media(max-width:250px) {
+    .ads img {
+        width: 210px;
+        height:90px;
     }
 }
