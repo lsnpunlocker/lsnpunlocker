@@ -8,436 +8,218 @@
      <!-----  For Svg Icon in website shortcut icon-->
     <link rel="shortcut icon" href="icon/lsnp_3Hn_icon.ico">
      <!----   jsdelive cdn for particles rotate pixcel ----->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> 
     <!---------------   For style particle pixcel  ----------->
-    <link rel="stylesheet" href="css/style.css">
+    
     <!----------  For Nav bar css style   --------->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/particles.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/ads-manger.css">
-    <link rel="stylesheet" href="css/service.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/signup.css">
-
-    <!-- <script src="https://kit.fontawesome.com/05ccc30de8.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="css/home-section.css">
+    <link rel="stylesheet" href="css/driver-section.css">
     <script src="https://kit.fontawesome.com/1c38d71225.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 </head>
 <body>
    
-        <!--    For auto play particles   -->
-     <section class="particals"> <!---Using Style.css-->
-         <div class="container" id="particles-js">
-            <!------------ For--------->
-            <nav class="nav-bar">
-                <div class="nav-bar-contant">
-                   
-                   <div class="nav-logo-text">
-                      <!--   For Icon -->
-                       <img src="icon/lsnp.jpg" alt="icon">
-                       <!--   For Main Title Header -->
-                       <header>LSNP UNLOCKER TOOL</header>
-                   </div>
-                  
-                    <div class="menu">
-                    <ul class="nav-bar-menu">
-                        <li><a href="#"><i class="far fa-solid fa-house-chimney"></i> Home</a></li>
-                        <li><a href="#driver"><i class="far fa-solid fa-download"></i> Download</a></li>
-                        <li><a href="#service"><i class="far fa-solid fa-screwdriver-wrench"></i> Service</a></li>
-                        <li><a href="#contact"><i class="far fa-solid fa-address-book"></i> Contact</a></li>
-                        <li><a href="https://www.youtube.com/channel/UCX1I61STrL8Veo7PQM5JPzg"target="_blank"><i class="far fa-solid fa-photo-film"></i>  Video Help</a></li>
-                        <li><a href="#signup" id="userlink"><i class="far fa-solid fa-user-gear"></i>  Sign-Up</a></li>
-                        <li><a href="login.html" id="signoutlink"><i class="far fa-solid fa-right-to-bracket"></i>  Login</a></li>
-                       
-                    </ul>
-                </div>
-                </div>
-               </nav>
-     
-               <!--   particles text and image -->
-               <div class="particles-container">
-               <a href="http://m.me/lsnpunlocker/?ref=pages_you_manage"target="_blank" class="chat-icon" >
-                    <img src="icon/msg-icon.png" alt="messenger">
-                 </a> 
-                <!---for themeloop in javascript control-->
-                <!--   using css name/ style.css   -->
-                  <h1  class="loop-type"> </h1> <br>
-                  <h2> 
-                      <span> Safe Userdata</span> Lockremove <br>
+ <!-- particle js -->
+ <div id="particles-js"></div>  
+ <!----navbar.css-->
+ <header>
+     <div class="header-container" >
+         <div class="logo">   <!-- Logo -->
+            <img src="icon/lsnp.jpg" alt="icon">
+            <h1>Lsnp Unlocker</h1>
+        </div>
+        <div class="open-close-bar"> <!--open close bar -->
+         <div class="open" id="open-bar">
+             <i class="far fa-solid fa-bars"></i>
+         </div>
+         <div class="close" id="close-bar">
+             <i class="far fa-solid fa-xmark"></i>
+         </div>
+     </div>
+       <ul class="header-menu">
+         <li ><a class="wow animate__bounceInDown" data-wow-duration="2s" data-wow-delay="0"   href="index.html" ><i class="fas fa-solid fa-house"></i> Home</a></li>
+         <li><a class="wow animate__bounceInDown" data-wow-duration="3.5s" data-wow-delay="0" href="html/download.html" ><i class="fas fa-solid fa-download"></i> Download</a></li>
+         <li><a class="wow animate__bounceInDown" data-wow-duration="4s" data-wow-delay="0" href="html/software store.html"><i class="fas fa-brands fa-app-store"></i>  Software Store</a></li> 
+         <li><a class="wow animate__bounceInDown" data-wow-duration="4s" data-wow-delay="0" href="index.html#driver"><i class="fas fa-brands fa-usb"></i> Driver</a></li> 
+         <li><a class="wow animate__bounceInDown" data-wow-duration="5.5s" data-wow-delay="0" href="https://www.youtube.com/@lsnpunlockerofficial567"><i class="fas fa-brands fa-youtube"></i> Guide Video</a></li>
+         <li><a class="wow animate__bounceInDown" data-wow-duration="6s" data-wow-delay="0" href="https://www.facebook.com/lsnpunlocker"><i class="fas fa-brands fa-facebook"></i> FB Page</a></li>      
+         <li><a class="wow animate__bounceInDown" data-wow-duration="6s" data-wow-delay="0" href="how_to_use.html"><i class="fas fa-solid fa-circle-info"></i> Info </a></li>     
+       </ul> 
+ </div>
+ </header>
+
+ <!-- Home section -->
+ <section id="home" class="home wow animate__fadeIn" data-wow-duration="0s" data-wow-delay="0s">
+     <div class="detial-name">
+         <div class="wow animate__backInRight">
+             <h2  class="slide-text "></h2>  <!------loopin text-->
+         </div>
+         <div class="detial-title wow animate__backInLeft"data-wow-duration="3s" data-wow-delay="0">
+             <h3 >
+                      <span> Safe Userdata</span> Lock Remove <br>
                       <span> Frp Remove  </span>/ Samsung Frp Erase <br>
                       <span>Bootloader Unlock</span>  / Mi Acc Bypass  <br>
                       <span> Auth Bypass</span> / Fix Dm-Verify Error  <br>
-                       <span> Fix Oppo </span>Auto Recovery Error
-                  </h2>
-                  <h3 class="detial-type"></h3>
-                  <a href="https://www.mediafire.com/file/s8y4x7s4nlbfzyn/V1.5_Mtk_Lsnp_Setup.exe/file" class="download"><i class="fa-solid fa-cloud-arrow-down"></i>  Download</a> <br>
-                  <h4  class="download-version"> <span>Lasted Version - </span>  MTK V1.5 (Online) x64bit Only</h4>
-                  <h5 class="Online_version"></h5>             
-                 <div class="particles-img"> <!---    imageslider.js for loop image   ---->
-                     <!-- <img name="slide" alt="photo">  -->
-                     <img src="icon/photo1.png" alt="">
-                 </div>
-            </div>
+                       <span> Fix Oppo </span> Auto Recovery Error Fix
+              </h3>
          </div>
-     </section><br>
-     <section id="service">
-         <div class="about">
-            <div class="about-container"> 
-               <div class="plan">
-                 <span class="header">Free Account</span>
-                <strong class="type-text">Supported All Model MTK CPU</strong>
-                 <ul class="account">
-                    <li><a href=""><i class="fay fa-solid fa-check"></i> Bootloader Unlock</a></li>
-                    <li><a href=""><i class="fay fa-solid fa-check"></i> Auth Bypass</a></li>
-                    <li><a href=""><i class="fay fa-solid fa-check"></i> Fix Dm-Verify Error</a></li>
-                 </ul>
-                 <div class="free-acc">
-                 <div class="price">
-                    <h5>0MMK</h5>
-                 </div>
-                </div> 
-                <div class="order">
-                 <a href="#"><i class="fa fa-solid fa-cart-shopping"></i> Free</a>
-                </div>
-               </div>
-               <div class="plan"> <!---using css / about.css-->
-                  <span class="header">User Account</span>
-                     <strong class="type-text">Supported All Model MTK CPU</strong>
-                       <ul class="account">
-                        <li><a href=""><i class="fay fa-solid fa-check"></i> Safe Userdata </a></li>
-                          <li><a href=""><i class="fay fa-solid fa-check"></i> UserLock Remove (Method-1)</a></li>
-                          <li><a href=""><i class="fay fa-solid fa-check"></i> UserLock Remove (Method-2)</a></li>
-                          <li><a href=""><i class="fay fa-solid fa-check"></i> Erase Frp</a></li>
-                          <li><a href=""><i class="fay fa-solid fa-check"></i> Samsung Frp Erase</a></li>
-                          <li><a href=""><i class="fay fa-solid fa-check"></i> Bootloader Unlock</a></li>
-                          <li><a href=""><i class="fay fa-solid fa-check"></i> Relock Bootloader</a></li>
-                          <li><a href=""><i class="fay fa-solid fa-check"></i> Xiaomi Account Bypass</a></li>
-                          <li><a href=""><i class="fay fa-solid fa-check"></i> Auth Bypass</a></li>
-                          <li><a href=""><i class="fay fa-solid fa-check"></i> Fix Dm-Verify Error</a></li>
-                          <li><a href=""><i class="fay fa-solid fa-check"></i> Fix Oppo Auto Recovery Error</a></li>
-                       </ul>
-                        <div class="price">
-                           <h5>15000MMK</h5>
-                        </div>
-                     <div class="order">
-                         <a href="http://m.me/lsnpunlocker/?ref=pages_you_manage"target="_blank"><i class="fa fa-solid fa-cart-shopping"></i> Order</a>
-                     </div>
-               </div>
-               <div class="plan">
-                   <span class="header">Reseller Account</span>
-                   <strong class="type-text">Supported All Model MTK CPU</strong>
-                   <ul class="account">
-                         <li><a href=""><i class="fay fa-solid fa-check"></i>Admin Panel</a></li>
-                         <li><a href=""><i class="fay fa-solid fa-check"></i>Can Register User Account</a></li>
-                   </ul> 
-                   <div class="reseller">
-                    <div class="price">
-                        <h5>200000MMK</h5>
-                       <div class="order">
-                           <a href="http://m.me/lsnpunlocker/?ref=pages_you_manage"target="_blank"><i class="fa fa-solid fa-cart-shopping"></i> Order</a>
-                       </div>
-                     </div>  
-                   </div>               
-               </div>
-             </div>              
-            </div>
+         <div class="name">
+             <h1 class="wow animate__fadeInUp" data-wow-duration="3s" data-wow-delay="0">Lsnp Unlocker Tool V1.5</h1>
+             <h5 class="wow animate__fadeInDown" data-wow-duration="4s" data-wow-delay="0">Lasted Version - V1.5</h5>
          </div>
-     </section> <br>
-     <section class="ads"  id="driver">
-        <div class="ads-manger">
-            <a href="https://www.facebook.com/wechathopinservice"target="_blank">
-                <img src="icon/ads.jpg" alt="ads">
-            </a>
-         </div>
-     </section> <br>
-     <section>
-        <div class="service" >
-            <div class="service-container">
-                <div class="service-driver">
-                   <span class="driver-title">Driver & App</span>
-                    <div class="driver-app">
-                      <div class="driver" >
-                         <ul class="dvapp">
-                            <li><a href="https://download2389.mediafire.com/p2qdov8u127g/jsia2wy1qpxo53d/MTK_driver.exe"><i class="fa-solid fa-file-zipper"></i> MTK Driver</a></li>
-                            <li><a href="https://download1327.mediafire.com/5qlqzczceklg/jg3uixrfrfcsr7p/UsbDk+Driver.rar"><i class="fa-solid fa-file-zipper"></i> UsbDk x64bit Driver</a></li>
-                            <li><a href="https://download1327.mediafire.com/5qlqzczceklg/jg3uixrfrfcsr7p/UsbDk+Driver.rar"><i class="fa-solid fa-file-zipper"></i> UsbDk x32bit Driver</a></li>
-                            <li><a href="https://download2276.mediafire.com/up228vvoml5g/sdbfx79nrcmemxq/libusb-win32-devel-filter-1.2.6.0.exe"><i class="fa-solid fa-file-zipper"></i> Libusb Driver</a></li>
-                            <li><a href="https://download1103.mediafire.com/zxgj5bed07eg/vmi21yf9evmt52h/Qualcomm_driver.exe"><i class="fa-solid fa-file-zipper"></i> Qualcomm Driver</a></li>
-                            <li><a href="https://download2391.mediafire.com/wvht9oph8nug/2vson2nf3nz17ln/adb-fastboot-druver-setup-1.4.3.exe"><i class="fa-solid fa-file-zipper"></i> Adb & Fastboot Driver</a></li>
-                            <li><a href="https://download1588.mediafire.com/m393vqoyy5sg/5x9m3yvwyaup0wm/SAMSUNG_USB_Driver_for_Mobile_Phones.exe"><i class="fa-solid fa-file-zipper"></i> Samsung Usb Driver</a></li>
-                            <li><a href="https://download2389.mediafire.com/dsgy2wo18skg/aukoct27ognqall/spd_driver_v1.4.zip"><i class="fa-solid fa-file-zipper"></i> SPD Driver</a></li>
-                            <li><a href="https://download1338.mediafire.com/h1pkzjpwjesg/u68tbfe144a7twq/Vivo%2BOppo_China_Google_Service.rar"><i class="fa-solid fa-file-zipper"></i> Vivo+Oppo+Meizu China Google Service.Zip</a></li>
-                            <li><a href="https://www.mediafire.com/file/jv5ubvw70z5hb5m/ChromeSetup.exe/file"><i class="fa-solid fa-file-zipper"></i> Google Chrome Download</a></li>    
-                            <li><a href="https://e1.pcloud.link/publink/show?code=XZ5Ia4ZiuE9FukRq6QHI9UUiegz3Lq0Uoek"><i class="fa-solid fa-file-zipper"></i> Internet Download Manger</a></li>    
-                            <li><a href="https://www.mediafire.com/file/0boy0bgnvjbv538/Pc_App_Installer_Store_setup.exe/file"><i class="fa-solid fa-file-zipper"></i> Pc App Installer Store</a></li>       
-                         </ul>
-                      </div>
-                      <div class="app">
-                         <ul class="dvapp">                         
-                            <li><a href="https://download1476.mediafire.com/603l5jle64ag/3v30n8xajvexsdj/miflash_unlock-en-5.5.1224.27.rar"><i class="fa-solid fa-file-zipper"></i> Xiomi Bootloader Unlock Tool</a></li>
-                            <li><a href="https://download1588.mediafire.com/hrcpjbxg7meg/s8bea0qq1fsan73/Window+Activater+lsnp.rar"><i class="fa-solid fa-file-zipper"></i> Window x10 (LifeTime Activate)</a></li>
-                            <li><a href="https://mega.nz/file/JNs0HBaD#O-gEbXjhl6BCYjdceUJ-yAU1pFkst8_IluuOjoXNQjU"><i class="fa-solid fa-file-zipper"></i> MCT Extractor</a></li>
-                            <li><a href="https://download1491.mediafire.com/4cj9cvrb0dfg/8mmvv1xj9we6gb3/winrar.apk"><i class="fa-brands fa-android"></i> Winrar Apk (Android)</a></li>
-                            <li><a href="https://download843.mediafire.com/wi1h6vdvxaag/sosbggch6refsw4/All%2BOne+Google+Installer+_signed.apk"><i class="fa-brands fa-android"></i> All+One Google Installer Apk (Android)</a></li>
-                            <li><a href="https://download2390.mediafire.com/ep3499xcw3yg/6m2afkx7qe94lny/Android_5_GAM.apk"><i class="fa-brands fa-android"></i> Google Account Manger 5.0 Apk</a></li>
-                            <li><a href="https://download2388.mediafire.com/5dtafjtymyng/0vpswf1l865wi70/Android_6_GAM.apk"><i class="fa-brands fa-android"></i> Google Account Manger 6.0 Apk</a></li>
-                            <li><a href="https://download2388.mediafire.com/krnc2j404svg/ywloy63ye1cnagc/Android_8-9-10_GAM.apk"><i class="fa-brands fa-android"></i> Google Account Manger 8,9,10 Apk</a></li>
-                            <li><a href="https://download2388.mediafire.com/vg0erhczz5sg/jpxhtldlyqw8ec6/FRP_Bypass+%281%29.apk"><i class="fa-brands fa-android"></i> BypassFrp 1.0 Apk</a></li>
-                            <li><a href="https://download2344.mediafire.com/2r8gzqtxg0hg/dmidagibkhb2b21/QuickShortcutMaker.apk"><i class="fa-brands fa-android"></i> QuickshortcutMaker 2.4.0 Apk</a></li>
-                            <li><a href="https://download1145.mediafire.com/ti78l5hp5xtg/xgkliwx5m957j87/Apex_Launcher.apk"><i class="fa-brands fa-android"></i> Apex_Launcher Apk</a></li>
-                         </ul>
-                      </div>
-                   </div>
-                </div>
-                <div class="service-tool" id="service-tool">
-                    <span class="driver-title">Download LSNP UNLOCKER TOOL </span>
-                    <div class="service-tool-container">
-                      <ul class="dvapp">
-                        <li><a href="https://www.mediafire.com/file/s8y4x7s4nlbfzyn/V1.5_Mtk_Lsnp_Setup.exe/file"><i class="fa fa-brands fa-windows"></i>  V1.5 Mtk Lsnp Unlocker Setup.exe <span> - Lasted Version</span></a></li>
-                         <li><a href="https://download1654.mediafire.com/dpl73sdj0i0g/u6pob161cr98cyq/Mtk+Lsnp+Unlocker+Setup.exe"><i class="fa fa-brands fa-windows"></i>   V1.0 Mtk Lsnp Unlocker Setup.exe</a></li>
-
-
-                         <li><a href="https://download1322.mediafire.com/gt7irm0my3fg/9ozk8xbslc7tjsl/Lsnp+Unlocker.apk"><i class="fa-brands fa-android"></i> Lsnp Unlocker Apk (Android Version 6.0 - 8.1)</a></li>
-                         <li><a href="https://download1334.mediafire.com/ty8h6j0h55hg/k153xb9tfzfzmih/gen_signed.apk"><i class="fa-brands fa-android"></i> Lsnp Unlocker Apk (Android Version 9 - 10 )</a></li>
-                         <li><a href="https://download1491.mediafire.com/qdo0apwmn6dg/2z4g7670vuxewei/Lsnp+Unlocker_6.16.apk"><i class="fa-brands fa-android"></i> Lsnp Unlocker Apk (Android Version 11 - 12 )</a></li>
-                         <li><a href="https://download1492.mediafire.com/y2gxgc21yveg/52hblo9mwo9ngam/gen_signed.apk"><i class="fa-brands fa-android"></i> Lsnp Unlocker Apk (Android Version 13 - 14)</a></li>
-                      </ul>
-                 </div>
-              </div>
-            </div>
-        </div>
-     </section><br>
-     <section>
-        <div class="signup" id="signup">
-            <div class="signup-container">
-                 <div class="mb-5"> 
-                    <h6>Register Account</h6>
-                    <input type="text" placeholder="Username" id="userInp" class="btn"> <br>
-                    <input type="text" placeholder="Email" id="emailInp" class="btn"> <br>
-                    <input type="password" placeholder="Password" id="passInp" class="btn"><br>
-                    <input type="text" placeholder="Region" id="regionInp" class="btn" > <br>
-                    <input type="text" placeholder="Township" id="townInp" class="btn"><br>
-                    <input type="text" placeholder="Phone Number" id="phoneInp" class="btn" ><br>
-                    <button type="text" id="sub_btn" class="btn">Sign Up</button>
-                    <a href="login.html">Already Have An Account?  Login</a>
+     </div>
     
-                 </div>
-            </div>
-        </div>
-    </section>
-    
-<footer id="contact">
-    <div class="footer-container">
-        <div class="footer-logo-container">
-            <!-- <div class="footer-logo">LSNP UNLOCKER TOOL</div> -->
-            <h2> Social Media</h2>
-            <!--social-->
-            <div class="footer-social">
-                <a href="https://www.facebook.com/lsnpunlocker"target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
-                <a href="http://m.me/lsnpunlocker/?ref=pages_you_manage"target="_blank"><i class="fa fa-brands fa-facebook-messenger"></i></a>
-                <a href="https://t.me/+M962zt0fyiMwZTZl"><i class="fa fa-brands fa-telegram"></i></a>
-                <a href=""><i class="fa fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa fa-brands fa-tiktok"></i></a>
-            </div>
-        </div>
-         <!---- for about -->
-         <div class="footer-menu">
-            <div class="footer-menu-box">
-                <h2>About</h2>
-                <ul>
-                    <li><a href="how_to_use.html"target="_blank">Mtk Unlocker  </a></li>
-                    
-                </ul>
-            </div>
-         </div>
-         <div class="footer-menu">
-            <div class="footer-menu-box">
-                <h2> Drivers</h2>
-                <ul>
-                    <li><a href="#driver"> MTK Driver</a></li>
-                    <li><a href="#driver">UsbDk x64 Driver</a></li>
-                    <li><a href="#driver">UsbDk x32 Driver</a></li>
-                    <li><a href="#driver">LibUsb Driver</a></li>
-                    <li><a href="#driver">Qualcomm Driver</a></li>
-                
-                </ul>
-            </div>
-         </div>    
-         <div class="footer-menu">
-            <div class="footer-menu-box">
-                <h2> Contact</h2>
-                <ul>
-                    <li><a href="#">lsnpunlocker@gmail.com</a></li>
-                    <li><a href="#">nawlasam@gmail.com</a></li>
-                    <li><a href="#">lasamseng@hotmail.com</a></li>
-                    <li><a href="#">+9509440373760</a></li>
-                </ul>
-            </div>
-         </div>   
-         <div class="footer-menu">
-              <div class="footer-menu-box">
-                <h2>App</h2>
-                <ul>
-                    <li><a href="#driver">Android</a></li>
-                    <li><a href="#driver">Window</a></li>
-                    <li><a href="#driver">Direct Download</a></li>
-                    <li><a href="#driver">Zip Download</a></li>
-                </ul>
-              </div>
-         </div>
-        
-          <!--  add new traffice ...www.livetrafficfeed.com-->
-       <center><a href="https://livetrafficfeed.com/website-counter" data-time="America%2FNew_York" data-root="0" id="LTF_counter_href">Website Counter</a>
-        <script type="text/javascript" src="//cdn.livetrafficfeed.com/static/static-counter/live.v2.js"></script><noscript><a href="https://livetrafficfeed.com/website-counter">Website Counter</a>
-        </noscript></center>
-        
+   
+     <div class="image wow animate__fadeInRight" data-wow-duration="3s" data-wow-delay="0">
+         <img name="slide" alt="photo">
+     </div>
+ </section>
+    <!-- Download Div -->
+  <div class="download">
+     <a href="html/download.html" class=" wow animate__fadeInUp" data-wow-duration="4s" data-wow-delay="0">Download Setup</a>
+     <a href="#driver" class=" wow animate__fadeInUp" data-wow-duration="4s" data-wow-delay="0">Driver Download</a>
+  </div>
+
+ <!----driver section -->
+ <section id="driver" class="driver">
+    <div class="section-title">
+        <h2 class="wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0s">Driver</h2>
     </div>
+     <div class="driver-info">
+        <!-- box-container 1 -->
+        <div class="box-container wow animate__fadeInUp"data-wow-duration="3s" data-wow-delay="0s">
+            <div class="box">
+                <div class="glass"></div>
+                <div class="content">
+                    <span>Mtk Driver</span>
+                    <a href="https://www.mediafire.com/file/tz1kwfx6wsybgdr/MTK_driver.exe/file">Download</a>
+                </div>
+            </div>
+            <div class="box ">
+                <div class="glass"></div>
+                <div class="content">
+                    <span>Qualcomm Driver</span>
+                    <a href="https://www.mediafire.com/file/hbmijalpswo6trr/Qualcomm_driver.exe/file">Download</a>
+                </div>
+            </div>
+            <div class="box ">
+                <div class="glass"></div>
+                <div class="content">
+                    <span>Spreadtrum Driver</span>
+                    <a href="https://www.mediafire.com/file/pom2bhkbhni0a72/Spd_driver_x64.exe/file">Download</a>
+                </div>
+            </div>
+            <div class="box ">
+                <div class="glass"></div>
+                <div class="content">
+                    <span>Hisilicon Driver</span>
+                    <a href="https://www.mediafire.com/file/e1ugqcdprv54bgo/HiSuite_13.0.0.310_OVE.exe/file">Download</a>
+                </div>
+            </div>
+            <div class="box "  >
+                <div class="glass"></div>
+                <div class="content">
+                    <span>Samsung Driver</span>
+                    <a href="https://www.mediafire.com/file/o654vqfbpgxnlhk/SAMSUNG_USB_Driver_for_Mobile_Phones.exe/file">Download</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="glass"></div>
+                <div class="content">
+                    <span>LibUsb Driver</span>
+                    <a href="https://www.mediafire.com/file/0fvsz7iwztzm7fj/libusb-win32-devel-filter-1.2.6.0.exe/file">Download</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="glass"></div>
+                <div class="content">
+                    <span>UsbDk Driver</span>
+                    <a href="https://www.mediafire.com/file/te5k6125kapwzxm/UsbDk_1.0.22_x64.msi/file">Download</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="glass"></div>
+                <div class="content">
+                    <span>Adb & Fastboot Driver</span>
+                    <a href="https://www.mediafire.com/file/mcdj6vtsoy51w3q/adb-fastboot-druver-setup-1.4.3.exe/file">Download</a>
+                </div>
+            </div>
+            <div class="box "  >
+                <div class="glass"></div>
+                <div class="content">
+                    <span>Fastboot Driver Error Fix</span>
+                    <a href="https://www.mediafire.com/file/qo7l0bee1vr0hbz/fastboot_driver_fix.rar/file">Download</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="glass"></div>
+                <div class="content">
+                    <span>Qualcomm Driver Error Fix</span>
+                    <a href="https://www.mediafire.com/file/3tt7b2iev9vzrxx/Qualcomm_Driver_Fix_By_Lsnp.rar/file">Download</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="glass"></div>
+                <div class="content">
+                    <span>Fix Huawei COM1.0</span>
+                    <a href="https://www.mediafire.com/file/yukv1xa407uzh50/HUAWEI%252BUSB%252BCOM%252B1.0%252Bdriver.zip/file">Download</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="glass"></div>
+                <div class="content">
+                    <span>Apple Usb Driver</span>
+                    <a href="https://www.mediafire.com/file/zmbqn77ev1jfs1w/iphoneusbdriver.exe/file">Download</a>
+                </div>
+            </div> 
+        </div>  
+     
+     </div>
+    <div id="load-more" class="wow animate__fadeInUp" data-wow-duration="5s" data-wow-delay="0s">Load More</div>
+ </section>
+<br>
+<!-- footer section -->
+<footer>
+  <div class="footer-content">
+     <h3 class=" wow animate__backInDown"data-wow-duration="3s" data-wow-delay="0s"> Lsnp Unlocker MObile Tool</h3>
+     <ul class="socials  wow animate__backInRight"data-wow-duration="3s" data-wow-delay="0s">
+         <li><a href="https://www.facebook.com/lsnpunlocker"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="m.me/lsnpunlocker"><i class="fa fa-brands fa-facebook-messenger"></i></a></li>
+         <li><a href="t.me/lsnp_unlocker_official"><i class="fa fa-brands fa-telegram"></i></a></li>
+         <li><a href="https://www.youtube.com/@lsnpunlockerofficial567"><i class="fa fa-youtube"></i></a></li>
+     </ul>
+     <div class="footer-bottom  wow animate__fadeInUp"data-wow-duration="3s" data-wow-delay="0s">
+         <p>Copyright &copy;2022 Lasam Tool Powered By <span>Lasam Seng Naw Pung&trade;</span>  </p>
+    </div>
+    <center> <a href="https://livetrafficfeed.com/website-counter" data-time="America%2FNew_York" data-root="0" id="LTF_counter_href">Website Counter</a>
+        <script type="text/javascript" src="//cdn.livetrafficfeed.com/static/static-counter/live.v2.js"></script><noscript><a href="https://livetrafficfeed.com/website-counter">Website Counter</a>
+        </noscript>
+    </center>
+  </div>  
 </footer>
-  <!--    copyright-->
- <span class="copyright">
-    Copyright 2022 &copy; LSNP &trade;
- </span>
+<script src="javascript.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>  
+<script src="js/javascript.js"></script>
+<script src="js/particle-script.js"></script>
+<script type="text/javascript">
 
-<script type="module">    
-    // Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js";
-
-const firebaseConfig = {
-apiKey: "AIzaSyDCTpsx1E-uFTNL15U9PdabU8a60aw_M4w",
-authDomain: "registervb-d1c2b.firebaseapp.com",
-databaseURL: "https://registervb-d1c2b-default-rtdb.asia-southeast1.firebasedatabase.app",
-projectId: "registervb-d1c2b",
-storageBucket: "registervb-d1c2b.appspot.com",
-messagingSenderId: "82103618386",
-appId: "1:82103618386:web:bc6aff11176a0524ae488b",
-measurementId: "G-9Q7X1VY9JX"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
-       import{ getDatabase , ref , set , child , get , update , remove} 
-            from "https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js";
-            const db = getDatabase();
-
-  // the references
-
-  const username = document.getElementById("userInp");
-  const email = document.getElementById("emailInp");
-  const pass = document.getElementById("passInp");
-  const region = document.getElementById("regionInp");
-  const township = document.getElementById("townInp");
-  const phone = document.getElementById("phoneInp");
-  const submit = document.getElementById("sub_btn");
-  
-
-// validation 
- function  isEmptyOrSpaces(str) {
-     return str === null || str.match (/^ *$/) !== null;
- }
-
- function Validation(){
-     let emailregex = /^[a-zA-Z0-9]+@(gmail|yahoo|outlook)\.com$/;    
-     if(isEmptyOrSpaces(township.value) || isEmptyOrSpaces(email.value) || isEmptyOrSpaces(username.value)||
-     isEmptyOrSpaces(pass.value)|| isEmptyOrSpaces(region.value)||isEmptyOrSpaces(phone.value)) {
-         alert("you cannotleft any field empty");
-         return false;
-     }                   
-     if(!emailregex.test(email.value)) {
-         alert("Enter a valid email");
-         return false;
-     }
-     return true;
- }
-        // Register user to firebase //
-         
-        function RegisterUser(){
-           if(!Validation()){
-               return;
-           };
-            const dbRef = ref(db);
-
-            get(child(dbRef , "Website-Users/" +  username.value)).then((snapshot)=> {
-                if (snapshot.exists()) {
-                    alert("Account Already Exist!");
-                }else {
-                    set(ref(db, "Website-Users/" + username.value),{
-                        username:username.value,
-                        Email: email.value, 
-                        password: encPass(),                          
-                        // Password:pass.value,
-                        Region:region.value,
-                        Township:township.value,                      
-                        Phone_Number:phone.value
-                    })
-                    .then(()=>{
-                        alert("User Account Created successfully !. But you cannot login Lsnp Mobile Tool ? Contact Admin for Allow Lsnp Mobile Tool. Contact - Fb page_ lsnpunlocker / Mobile Phone - +9509440376760");
-                    })
-                    .catch((error)=>{
-                        alert("error"+ error);
-                    })
-                }
-            })
+    new WOW().init();
+    $(window).scroll(function(){
+        var sticky = $("header");
+        if($(window).scrollTop() >= 100) {
+            sticky.addClass("fixed")
+        } else {
+            sticky.removeClass("fixed")
         }
-        
-        //Encription /// password chage to another code..
-
-        function encPass(){
-            var pass12 = CryptoJS.AES.encrypt(pass.value,pass.value);
-            return pass12.toString();
-        }
-
-
-          // Click Register Btn
-         submit.addEventListener('click', RegisterUser);
- </script>
-
-<script>
-           // references 
-        let userlink = document.getElementById('userlink');
-        let signoutlink = document.getElementById('signoutlink');
-        var currentUser = null;
-
-           // function
-
-        function getUsername() {
-            let keepLoggedIn = localStorage.getItem('keepLogggedIn');
-            if (keepLoggedIn == "yes") {
-                currentUser = JSON.parse(localStorage.getItem('user'));
-            } 
-            else{
-                currentUser = JSON.parse(sessionStorage.getItem('user'));
-            }
-        }
-  
-            // windows loads
-            window.onload = function(){
-                getUsername();
-                if(currentUser == null) {
-                    // userlink.innerText ="Sign-Up"; 
-                    // userlink.href  = "index.html";      
-                    
-                    // signoutlink.innerHTML = "Login";
-                    // signoutlink.href = "login.html";
-                    // signoutlink.style.color = "";
-
-               } else {
-                     userlink.innerHTML = "Welcome User👋   ";
-                    userlink.href = "#"
-
-                    signoutlink.innerHTML = currentUser.username;
-                    signoutlink.href = "#"
-                }
-            }
-</script> 
-<script src="particles.js"></script>
-<script src="js/app.js"></script>
-<script src="js/themeloop.js"></script>  
-<script src="js/imageslider.js"></script>
+    })
+</script>
 </body>
 </html>
        
