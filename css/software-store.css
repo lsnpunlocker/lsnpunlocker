@@ -216,7 +216,7 @@ main .products-container .product {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* user-select: none; */
+    user-select: none; 
     cursor: pointer;
 }
 main .products-container .product:hover {
