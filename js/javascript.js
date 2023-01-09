@@ -1,4 +1,3 @@
-// control open / close btn
 const Header_Container = document.querySelector(".header-container");
 const Open_Bar = document.getElementById("open-bar");
 const Close_Bar = document.getElementById("close-bar");
@@ -10,13 +9,9 @@ Open_Bar.addEventListener("click" ,() => {
 Close_Bar.addEventListener("click",() => {
     Header_Container.classList.remove("active");
 })
-
-//loop text and image//
-
 var i = 0;
 var image = [];
 var time = 2500;
-
 image[0] = "icon/slidephoto/photo1.png";
 image[1] = "icon/slidephoto/photo2.png";
 image[2] = "icon/slidephoto/photo3.png";
@@ -41,7 +36,6 @@ function changeImg() {
 }
 window.onload = changeImg
 
-//text looping...//
 const typing = new Typed (".slide-text",{
     strings:["....","Lsnp Unlocker Tool is the Best Service Tool",
     "Supported Brand Model","Supported Brand Model Oppo",
@@ -54,7 +48,6 @@ const typing = new Typed (".slide-text",{
     loop : true,
 });
 
-// Load More Button Control
 let LoadMoreButton = document.querySelector('#load-more');
 let currentItem = 4;
 
