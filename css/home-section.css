@@ -19,7 +19,9 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-bottom: 30px;
 }
-
+.typed-cursor {
+	display: none;
+}
 .detial-title  h3{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
@@ -36,7 +38,6 @@
 	text-transform: uppercase;
 	text-shadow: 0 15px 20px #000000b0;
 	margin-bottom: 0;
-	/* visibility: hidden; */
 	position: relative;
 }
 .home h5 {
@@ -55,7 +56,6 @@
 .home .image{
 	width: 630px;
 	height: 350px;
-	/* background: #000; */
 	margin-bottom: 0px;
     margin-left: 100px;
 }
@@ -63,30 +63,117 @@
 	width: 100%;
 	height: 100%;
 }
- /* donwload div */
  .download {
+	padding-top: 20px;
+	height: 200px;
     background:rgb(57, 2, 79);
-    height: 150px;
     padding-left: 100px;
+	display: flex;
+	gap: 20px;
  } 
- .download a {
-	display: inline-block;
-    margin: 10px;
-	padding: 13px 30px;
-	background-color: #ef7016fe;
-	border: 1px solid #ffffff9f;
-	border-radius: 50px;
-	color: #efefef;
-	font-size: 15px;
-	text-transform: uppercase;
-    font-weight: 500;
-	text-decoration: none;
-	margin-top: 35px;
+ .button {
+	padding: 20px 20px;
+	width: 150px;
+	height: 15px;
+	background-color: red;
+	border: none;
 	position: relative;
+	transition: 500ms;
 	z-index: 91;
-}
-
-
+  }
+  
+  .button a {
+	cursor: pointer;
+	color: rgb(247, 246, 246);
+	position: relative;
+	transition: 500ms;
+	transition-delay: 500ms;
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	font-weight: 600;
+  }
+  
+  .button:before {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	left: 50%;
+	right: 50%;
+	top: 50%;
+	bottom: 50%;
+	transition: 500ms;
+	transition-delay: 200ms;
+	box-shadow: 0 0 10px rgb(255, 255, 255),
+	 0 0 30px red, 
+	 0 0 50px red;
+  }
+  
+  .button div {
+	transition: 900ms;
+	position: absolute;
+	background-color: white;
+	box-shadow: 0 0 15px white, 0 0 30px white, 0 0 50px red;
+  }
+  
+  .button .top {
+	width: 15px;
+	height: 2px;
+	top: 0;
+	left: 0;
+  }
+  
+  .button .bottom {
+	width: 15px;
+	height: 2px;
+	bottom: 0;
+	right: 0;
+  }
+  
+  .button .left {
+	width: 2px;
+	height: 15px;
+	top: 0;
+	left: 0;
+  }
+  
+  .button .right {
+	width: 2px;
+	height: 15px;
+	bottom: 0;
+	right: 0;
+  }
+  
+  .button:hover {
+	color: #000;
+  }
+  
+  .button:hover span {
+	color: #000;
+  }
+  
+  .button:hover:before {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  }
+  
+  .button:hover .top, 
+  .button:hover .bottom {
+	width: 100%;
+  }
+  
+  .button:hover .left,
+  .button:hover .right {
+	height: 100%;
+  }
 
 @media(max-width:1111px){
 	.detial-name .slide-text  {
@@ -115,21 +202,24 @@
 		margin-bottom: 0px;
 		margin-left: 100px;
 	}
-	 /* donwload div */
-	 .download {
-		max-width: 1400px;
-		height: 150px;
-		padding-left: 40px;
+	.download {
+		padding-top: 20px;
+		height: 200px;
+		background:rgb(57, 2, 79);
+		padding-left: 30px;
+		display: flex;
+		gap: 20px;
 	 } 
-	 .download a {
-		margin: 10px;
+	 .button {
+		padding: 20px 20px;
+		width: 150px;
+		height: 15px;
+	  }  
+	  .button a {
 		font-size: 14px;
-		margin-top: 35px;
-		padding: 13px 23px;
-		z-index: 91;
-	}
+	  }
+	  
 }
-
 @media(max-width:1050px){
 	.detial-name .slide-text  {
 		font-size:23px ;
@@ -157,26 +247,25 @@
 		margin-bottom: 0px;
 		margin-left: 100px;
 	}
-	 /* donwload div */
-	 .download {
-		height: 150px;
-		padding-left: 40px;
+	.download {
+		padding-top: 20px;
+		height: 200px;
+		padding-left: 20px;
+		display: flex;
+		gap: 20px;
 	 } 
-	 .download a {
-		margin: 10px;
-		font-size: 14px;
-		margin-top: 35px;
-		padding: 12px 20px;
-		z-index: 91;
-	}
+	 .button {
+		padding: 20px 20px;
+		width: 150px;
+		height: 15px;
+	  }  
+	  .button a {
+		font-size: 15px;
+	  }
 }
 @media(max-width:950px){
 	.detial-name h2 {
-		visibility: hidden;
-	}
-	.detial-name .slide-text  {
-		font-size:0px ;
-		margin-bottom: 0px;
+		display: none;
 	}
 	.detial-title  h3{
 		font-size: 15px;
@@ -203,17 +292,21 @@
 		margin-bottom: 30px;
 		margin-left: 50px;
 	}
-	 .download {
-		height: 150px;
-		padding-left: 30px;
+	.download {
+		padding-top: 0px;
+		height: 200px;
+		padding-left: 20px;
+		display: flex;
+		gap: 20px;
 	 } 
-	 .download a {
-		margin: 10px;
-		font-size: 13px;
-		margin-top: 0px;
-		padding: 12px 20px;
-		z-index: 91;
-	}
+	 .button {
+		padding: 18px 20px;
+		width: 120px;
+		height: 8px;
+	  }  
+	  .button a {
+		font-size: 12px;
+	  }
 }
 @media(max-width:900px){
 	.home .image{
@@ -231,16 +324,20 @@
 		margin: 15px ;
 	}
 	.download {
-		height: 150px;
-		padding-left: 30px;
+		padding-top: 0px;
+		height: 200px;
+		padding-left: 20px;
+		display: flex;
+		gap: 20px;
 	 } 
-	 .download a {
-		margin: 10px;
-		font-size: 11px;
-		margin-top: 0px;
-		padding: 12px 18px;
-		z-index: 91;
-	}
+	 .button {
+		padding: 15px 10px;
+		width: 120px;
+		height: 10px;
+	  }  
+	  .button a {
+		font-size: 12px;
+	  }
 }
 
 @media(max-width:800px){
@@ -257,17 +354,6 @@
 		font-size: 15px;
 		padding: 9px 18px;
 		margin: 15px ;
-	}
-	.download {
-		height: 150px;
-		padding-left: 10px;
-	 } 
-	 .download a {
-		margin: 8px;
-		font-size: 11px;
-		margin-top: 0px;
-		padding: 12px 18px;
-		z-index: 91;
 	}
 }
 @media(max-width:750px){
@@ -302,31 +388,23 @@
 		position: absolute;
 		margin-top: 100px;
 	}
-	 /* donwload div */
-	 .download {
+	.download {
+		padding-top: 30px;
 		height: 150px;
 		padding-left: 200px;
+		display: flex;
+		gap: 20px; 
 	 } 
-	 .download a {
-		margin: 10px;
-		font-size: 10px;
-		margin-top: 35px;
-		padding: 11px 16px;
-		z-index: 91;
-	}
+	 .button {
+		padding: 15px 10px;
+		width: 120px;
+		height: 10px;
+	  }  
+	  .button a {
+		font-size: 12px;
+	  }
 }
 @media(max-width:700px){
-	 .download {
-		height: 150px;
-		padding-left: 150px;
-	 } 
-	 .download a {
-		margin: 10px;
-		font-size: 10px;
-		margin-top: 35px;
-		padding: 10px 16px;
-		z-index: 91;
-	}
 	.home .image{
 		width: 430px;
 		height: 240px;
@@ -335,6 +413,19 @@
 		position: absolute;
 		margin-top: 100px;
 	}	
+	.download {
+		padding-top: 30px;
+		height: 150px;
+		padding-left: 150px;
+		display: flex;
+		gap: 20px; 
+	 } 
+}
+@media(max-width:630px){
+	
+	.download {
+		padding-left: 102px;
+	 } 
 }
 @media(max-width:600px){
 	.home .name {
@@ -347,18 +438,10 @@
 		padding-bottom:0px;
 		position: absolute;
 	}
-	/* donwload div */
 	.download {
-	   height: 150px;
-	   padding-left: 120px;
-	} 
-	.download a {
-	   margin: 10px;
-	   font-size: 10px;
-	   margin-top: 35px;
-	   padding: 10px 16px;
-	   z-index: 91;
-   }
+		padding-left: 102px;
+	 } 
+	
 }
 @media(max-width:550px){
 	.home .image{
@@ -369,16 +452,16 @@
 		position: absolute;
 	}
 	.download {
-	   height: 150px;
-	   padding-left: 100px;
-	} 
-	.download a {
-	   margin: 10px;
-	   font-size: 10px;
-	   margin-top: 35px;
-	   padding: 10px 16px;
-	   z-index: 91;
-   }
+		padding-left: 80px;
+	 } 
+	.button {
+		padding: 15px 8px;
+		width: 120px;
+		height: 10px;
+	  }  
+	  .button a {
+		font-size: 10px;
+	  }	
 }
 @media(max-width:500px){
 	.home .image{
@@ -391,18 +474,7 @@
 	.home .detial-name {
 		margin-bottom: 50px;
 	}
-	/* donwload div */
-	.download {
-	   height: 150px;
-	   padding-left: 60px;
-	} 
-	.download a {
-	   margin: 10px;
-	   font-size: 10px;
-	   margin-top: 35px;
-	   padding: 10px 16px;
-	   z-index: 91;
-   }
+	
 }
 @media(max-width:450px){
 	.home .image{
@@ -413,123 +485,216 @@
 		position: absolute;
 	}
 	.home .detial-name {
-		margin-bottom: 80px;
+		margin-bottom: 50px;
 		margin-right: 30px;
 	}
-	/* donwload div */
 	.download {
-	   height: 100px;
-	   padding-left: 30px;
-	} 
-	.download a {
-	   margin: 10px;
-	   font-size: 10px;
-	   margin-top: 0px;
-	   padding: 10px 16px;
-	   z-index: 91;
-   }
+		padding-left: 40px;
+	 } 
+	.button {
+		padding: 13px 8px;
+		width: 120px;
+		height: 10px;
+	  }  
+	  .button a {
+		font-size: 10px;
+	  }	
+}
+@media(max-width:420px) {
+	.home {
+		height: 400px;
+	}
+	.home .image{
+		width: 260px;
+		height: 150px;
+		padding-top: 0px;
+		padding-right: 50px;
+		position: absolute;
+	}
+	.home .detial-name {
+		padding-bottom: 70px;
+	}
+	.home .name h1 {
+		font-size: 15px;
+	}
+	.home .name h5 {
+		font-size: 11px;
+	}
+	.download {
+		padding-left: 50px;
+		height: 80px;
+	 } 
+	.button {
+		padding: 13px 8px;
+		width: 100px;
+		height: 10px;
+	  }  
+	  .button a {
+		font-size: 10px;
+	  }	
 }
 @media(max-width:400px){
 	.home .image{
 		width: 270px;
 		height: 150px;
+		padding-top: 10px;
 		padding-right: 50px;
-		padding-bottom:60px;
+		padding-bottom:70px;
 		position: absolute;
 	}
 	.home .detial-name {
-		margin-bottom: 150px;
+		margin-bottom: 80px;
 		margin-right: 30px;
 	}
-	/* donwload div */
 	.download {
-	   height: 80px;
-	   padding-left: 30px; 
-	} 
-	.download a {
-	   margin: 10px;
-	   font-size: 10px;
-	   margin-top: 0px;
-	   padding: 9px 14px;
-	   z-index: 91;
-   }
+		padding-left: 30px;
+		height: 70px;
+	 } 
+	.button {
+		padding: 13px 8px;
+		width: 120px;
+		height: 10px;
+	  }  
+	  .button a {
+		font-size: 10px;
+	  }	
 }
 @media(max-width:350px){
+	.home {
+		height: 330px;
+	}
 	.home .image{
 		width: 230px;
 		height: 130px;
+		padding-top: 10px;
 		padding-right: 50px;
-		padding-bottom:60px;
+		padding-bottom:50px;
 		position: absolute;
 	}
 	.home .detial-name {
-		margin-bottom: 150px;
-		margin-right: 0px;
-		margin-left: 20px;
+		margin-bottom: 60px;
+		margin-right: 30px;
 	}
 	.home .name h1 {
 		font-size: 13px;
 	}
 	.home .name h5 {
-		font-size: 10px;
+		font-size: 11px;
 	}
-	/* donwload div */
 	.download {
-	   height: 80px;
-	   padding-left: 30px; 
-	} 
-	.download a {
-	   margin: 10px;
-	   font-size: 8px;
-	   margin-top: 0px;
-	   padding: 9px 12px;
-	   z-index: 91;
-   }
+		padding-left: 30px;
+		height: 70px;
+		gap: 10px;
+	 } 
+	.button {
+		padding: 13px 8px;
+		width: 100px;
+		height: 10px;
+	}  
+	.button a {
+		font-size: 9px;
+	}	
 }
-@media(max-width:300px){
+@media(max-width:320px){
+	.home {
+		height: 330px;
+	}
 	.home .image{
-		width: 200px;
-		height: 110px;
+		width: 230px;
+		height: 130px;
+		padding-top: 10px;
 		padding-right: 50px;
-		padding-bottom:60px;
+		padding-bottom:50px;
 		position: absolute;
 	}
 	.home .detial-name {
-		margin-bottom: 150px;
-		margin-right: 0px;
-		margin-left: 20px;
+		margin-bottom: 60px;
+		margin-right: 30px;
+	}
+	.home .name h1 ,
+	.home .name h5 {
+		margin-left: 40px;
 	}
 	.home .name h1 {
 		font-size: 12px;
 	}
 	.home .name h5 {
-		font-size: 8px;
+		font-size: 9px;
 	}
-	/* donwload div */
 	.download {
-	   height: 80px;
-	   padding-left:0px; 
-	} 
-	.download a {
-	   margin: 8px;
-	   font-size: 8px;
-	   margin-top: 0px;
-	   padding: 9px 10px;
-	   z-index: 91;
-   }
+		padding-left: 10px;
+		height: 70px;
+		gap: 10px;
+	 } 
+	.button {
+		padding: 13px 8px;
+		width: 100px;
+		height: 10px;
+	}  
+	.button a {
+		font-size: 9px;
+	}	
+}
+@media(max-width:280px){
+	.home {
+		height: 350px;
+	}
+	.home .image{
+		width: 230px;
+		height: 130px;
+		padding-top: 10px;
+		padding-right: 50px;
+		padding-bottom:0px;
+		position: absolute;
+	}
+	.home .detial-name {
+		margin-bottom: 100px;
+		margin-right: 30px;
+	}
+	.home .name h1 ,
+	.home .name h5 {
+		margin-left: 40px;
+	}
+	.home .name h1 {
+		font-size: 12px;
+	}
+	.home .name h5 {
+		font-size: 9px;
+	}
+	.download {
+		padding-left: 10px;
+		height: 120px;
+		gap: 0px;
+		display: grid;
+	 } 
+	.button {
+		padding: 13px 8px;
+		width: 200px;
+		height: 10px;
+	}  
+	.button a {
+		font-size: 9px;
+	}	
 }
 @media(max-width:250px){
+	.home {
+		height: 350px;
+	}
 	.home .image{
 		width: 180px;
 		height: 100px;
+		padding-top: 0px;
 		padding-right: 50px;
-		padding-bottom:60px;
+		padding-bottom:0px;
 		position: absolute;
 	}
 	.home .detial-name {
-		margin-bottom: 250px;
-		margin-right: 0px;
-		margin-left: 10px;
+		margin-bottom: 180px;
+		margin-right: 30px;
+	}
+	.home .name h1 ,
+	.home .name h5 {
+		margin-left: 40px;
 	}
 	.home .name h1 {
 		font-size: 10px;
@@ -537,48 +702,20 @@
 	.home .name h5 {
 		font-size: 8px;
 	}
-	/* donwload div */
 	.download {
-	   height: 100px;
-	   padding-left:40px; 
-	} 
-	.download a {
-	   margin: 8px;
-	   font-size: 8px;
-	   margin-top: 0px;
-	   padding: 7px 10px;
-	   z-index: 91;
-   }
-}
-@media(max-width:200px){
-	.home .image{
-		width: 170px;
-		height: 90px;
-		padding-right: 50px;
-		padding-bottom:60px;
-		position: absolute;
-	}
-	.home .detial-name {
-		margin-bottom: 250px;
-		margin-right: 0px;
-		margin-left: 10px;
-	}
-	.home .name h1 {
-		font-size: 10px;
-	}
-	.home .name h5 {
+		padding-left: 45px;
+		height: 100px;
+		gap: 0px;
+		display: grid;
+	 } 
+	.button {
+		padding: 15px 1px;
+		width: 120px;
+		height: 6px;
+	}  
+	.button a {
 		font-size: 8px;
-	}
-	/* donwload div */
-	.download {
-	   height: 100px;
-	   padding-left:40px; 
-	} 
-	.download a {
-	   margin: 8px;
-	   font-size: 8px;
-	   margin-top: 0px;
-	   padding: 7px 10px;
-	   z-index: 91;
-   }
+	}	
 }
+
+
